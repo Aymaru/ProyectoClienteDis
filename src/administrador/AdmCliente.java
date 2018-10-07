@@ -68,7 +68,7 @@ public class AdmCliente {
     public DTOAlgoritmos getDTO(String elHost, int elPuerto){
         ObjetoComunicador Objeto=new ObjetoComunicador(null, TipoAccion.GET_DTO);
         Cliente c=new Cliente();
-        c.setHOST((elHost.isEmpty() ? "localhost" : elHost)   );
+        c.setHOST((elHost.isEmpty() ? "localhost" : elHost));
         c.setPUERTO((elPuerto < 0 ? 5000 : elPuerto));
 
         try {
@@ -78,6 +78,8 @@ public class AdmCliente {
             return null;
         }
     }
+    
+    
     
     
     /*

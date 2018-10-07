@@ -39,8 +39,8 @@ public class GUI extends javax.swing.JFrame {
      */
         
         AdmCliente ctrl = new AdmCliente();
-        
-        String host = "localhost";
+        //Cambiar host en el Cliente.class
+        String host = "192.168.0.104";
         int puerto = 5000;
         DTOAlgoritmos data;
         
@@ -53,7 +53,7 @@ public class GUI extends javax.swing.JFrame {
         fraseTxt.setLineWrap(true);
         jTextArea2.setLineWrap(true);
         sizeFrase.setEnabled(false);
-        for (int i=0;i<Alfabetos.size();i++){
+       for (int i=0;i<Alfabetos.size();i++){
            alfabetosComboBox.addItem(Alfabetos.get(i));
         }
         

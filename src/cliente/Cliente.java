@@ -1,6 +1,5 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * To change this template, choose Tools | Templates * and open the template in the editor.
  */
 
 package cliente;
@@ -12,6 +11,7 @@ import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
+import java.net.InetAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
@@ -21,7 +21,10 @@ import java.net.UnknownHostException;
  */
 public class Cliente {
 
- private   String HOST =  "localhost";
+    private String HOST = "192.168.0.104";
+    
+    //private  String HOST =  "localhost";
+   
     private    int PUERTO= 5000;
 
 
